@@ -1,0 +1,439 @@
+{
+  "status": "ready",
+  "model_name": "Random Forest Classifier",
+  "algorithm": "RandomForestClassifier(n_estimators=120, balanced)",
+  "trained_at": "2026-10-18T13:22:21.587354",
+  "evaluation_type": "Patient-Level Held-Out Test Set (80/20)",
+  "dataset_source": "PhysioNet ICU Challenge Benchmark",
+  "dataset_path": "D:\\SepsisSenseAI\\backend\\artifacts\\sample_dataset.csv",
+  "is_benchmark_generated": true,
+  "dataset_overview": {
+    "total_observations": 2696,
+    "total_features": 17,
+    "positive_count": 167,
+    "negative_count": 2529,
+    "positive_rate_percent": 6.19,
+    "total_patients": 380
+  },
+  "primary_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "confusion_matrix": {
+      "tn": 480,
+      "fp": 0,
+      "fn": 0,
+      "tp": 53
+    },
+    "test_samples": 533,
+    "train_samples": 2163,
+    "train_patients": 304,
+    "test_patients": 76,
+    "threshold": 0.4
+  },
+  "models_comparison": [
+    {
+      "model_name": "Random Forest (Primary)",
+      "algorithm": "Random Forest (Ensemble Trees)",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "confusion_matrix": {
+        "tn": 480,
+        "fp": 0,
+        "fn": 0,
+        "tp": 53
+      },
+      "is_primary": true
+    },
+    {
+      "model_name": "Logistic Regression (Baseline)",
+      "algorithm": "Penalized Logistic Regression",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "confusion_matrix": {
+        "tn": 480,
+        "fp": 0,
+        "fn": 0,
+        "tp": 53
+      },
+      "is_primary": false
+    }
+  ],
+  "roc_curve": [
+    {
+      "fpr": 0.0,
+      "tpr": 0.0
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.1321
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.1887
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.2642
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.3774
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.5283
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 0.6226
+    },
+    {
+      "fpr": 0.0,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0104,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0146,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0312,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0354,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0437,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0479,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.05,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0542,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0604,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0708,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.075,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.0979,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.1042,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.175,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.1792,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 0.1896,
+      "tpr": 1.0
+    },
+    {
+      "fpr": 1.0,
+      "tpr": 1.0
+    }
+  ],
+  "pr_curve": [
+    {
+      "recall": 1.0,
+      "precision": 0.0994
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.3706
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.3759
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.3813
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.5196
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.53
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6023
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6463
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6709
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.6974
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.726
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.7465
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.791
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.8154
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.8413
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.8689
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.9298
+    },
+    {
+      "recall": 1.0,
+      "precision": 0.9636
+    },
+    {
+      "recall": 1.0,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.9434,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.9057,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.8679,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.8302,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.7736,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.7358,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.6981,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.6604,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.5283,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.4906,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.4528,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.4151,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.3396,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.2642,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.1698,
+      "precision": 1.0
+    },
+    {
+      "recall": 0.0,
+      "precision": 1.0
+    }
+  ],
+  "feature_importances": [
+    {
+      "feature": "Resp",
+      "label": "Respiration Rate",
+      "unit": "breaths/min",
+      "importance": 0.2311,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "WBC",
+      "label": "White Blood Cell Count",
+      "unit": "x10^3/\u00b5L",
+      "importance": 0.184,
+      "category": "laboratory"
+    },
+    {
+      "feature": "Creatinine",
+      "label": "Serum Creatinine",
+      "unit": "mg/dL",
+      "importance": 0.153,
+      "category": "laboratory"
+    },
+    {
+      "feature": "HR",
+      "label": "Heart Rate",
+      "unit": "bpm",
+      "importance": 0.0929,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "Temp",
+      "label": "Body Temperature",
+      "unit": "\u00b0C",
+      "importance": 0.0911,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "O2Sat",
+      "label": "Oxygen Saturation (SpO2)",
+      "unit": "%",
+      "importance": 0.0481,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "MAP",
+      "label": "Mean Arterial Pressure",
+      "unit": "mmHg",
+      "importance": 0.0415,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "Platelets",
+      "label": "Platelet Count",
+      "unit": "x10^3/\u00b5L",
+      "importance": 0.0404,
+      "category": "laboratory"
+    },
+    {
+      "feature": "Lactate",
+      "label": "Serum Lactate",
+      "unit": "mmol/L",
+      "importance": 0.0341,
+      "category": "laboratory"
+    },
+    {
+      "feature": "pH",
+      "label": "Arterial Blood pH",
+      "unit": "units",
+      "importance": 0.0249,
+      "category": "laboratory"
+    },
+    {
+      "feature": "BUN",
+      "label": "Blood Urea Nitrogen",
+      "unit": "mg/dL",
+      "importance": 0.0188,
+      "category": "laboratory"
+    },
+    {
+      "feature": "Glucose",
+      "label": "Blood Glucose",
+      "unit": "mg/dL",
+      "importance": 0.0143,
+      "category": "laboratory"
+    },
+    {
+      "feature": "DBP",
+      "label": "Diastolic Blood Pressure",
+      "unit": "mmHg",
+      "importance": 0.0127,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "SBP",
+      "label": "Systolic Blood Pressure",
+      "unit": "mmHg",
+      "importance": 0.0123,
+      "category": "vital_signs"
+    },
+    {
+      "feature": "Age",
+      "label": "Patient Age",
+      "unit": "years",
+      "importance": 0.0006,
+      "category": "demographics"
+    },
+    {
+      "feature": "ICULOS",
+      "label": "ICU Length of Stay",
+      "unit": "hours",
+      "importance": 0.0003,
+      "category": "demographics"
+    },
+    {
+      "feature": "Gender",
+      "label": "Biological Sex",
+      "unit": "0=F, 1=M",
+      "importance": 0.0001,
+      "category": "demographics"
+    }
+  ],
+  "imbalance_notes": "ICU sepsis prediction exhibits stark class imbalance (~5-10% positive incidence). In this clinical setting, standard Accuracy is deceptively inflated by majority negative predictions. Recall (Sensitivity) is prioritized to avoid fatal false negatives (missed sepsis onset), while Precision-Recall AUC (PR-AUC) evaluates the true clinical utility of alarms without being biased by large true-negative counts."
+}

@@ -1,0 +1,246 @@
+{
+  "feature_names": [
+    "HR",
+    "Resp",
+    "Temp",
+    "MAP",
+    "O2Sat",
+    "SBP",
+    "DBP",
+    "WBC",
+    "Lactate",
+    "Creatinine",
+    "Platelets",
+    "Glucose",
+    "BUN",
+    "pH",
+    "Age",
+    "ICULOS",
+    "Gender"
+  ],
+  "metadata": {
+    "HR": {
+      "label": "Heart Rate",
+      "unit": "bpm",
+      "category": "vital_signs",
+      "normal_range": [
+        60.0,
+        100.0
+      ],
+      "default": 82.0,
+      "description": "Tachycardia (>90 bpm) is a core SIRS criterion reflecting autonomic stress in infection.",
+      "sofa_relevant": true
+    },
+    "Resp": {
+      "label": "Respiration Rate",
+      "unit": "breaths/min",
+      "category": "vital_signs",
+      "normal_range": [
+        12.0,
+        20.0
+      ],
+      "default": 18.0,
+      "description": "Tachypnea (>20 breaths/min) indicates respiratory compensation for metabolic acidosis or pulmonary injury.",
+      "sofa_relevant": true
+    },
+    "Temp": {
+      "label": "Body Temperature",
+      "unit": "\u00b0C",
+      "category": "vital_signs",
+      "normal_range": [
+        36.5,
+        37.5
+      ],
+      "default": 37.0,
+      "description": "Hyperthermia (>38.0\u00b0C) or hypothermia (<36.0\u00b0C) indicates dysregulated host immune response.",
+      "sofa_relevant": false
+    },
+    "MAP": {
+      "label": "Mean Arterial Pressure",
+      "unit": "mmHg",
+      "category": "vital_signs",
+      "normal_range": [
+        70.0,
+        105.0
+      ],
+      "default": 85.0,
+      "description": "MAP < 65 mmHg is a critical septic shock criterion indicating hypoperfusion.",
+      "sofa_relevant": true
+    },
+    "O2Sat": {
+      "label": "Oxygen Saturation (SpO2)",
+      "unit": "%",
+      "category": "vital_signs",
+      "normal_range": [
+        95.0,
+        100.0
+      ],
+      "default": 97.0,
+      "description": "Peripheral arterial oxygen saturation, decreases with respiratory failure and hypoxia.",
+      "sofa_relevant": true
+    },
+    "SBP": {
+      "label": "Systolic Blood Pressure",
+      "unit": "mmHg",
+      "category": "vital_signs",
+      "normal_range": [
+        90.0,
+        120.0
+      ],
+      "default": 115.0,
+      "description": "Systolic pressure; hypotension (SBP < 90 mmHg) is a key qSOFA trigger.",
+      "sofa_relevant": true
+    },
+    "DBP": {
+      "label": "Diastolic Blood Pressure",
+      "unit": "mmHg",
+      "category": "vital_signs",
+      "normal_range": [
+        60.0,
+        80.0
+      ],
+      "default": 72.0,
+      "description": "Diastolic vascular resistance component.",
+      "sofa_relevant": false
+    },
+    "WBC": {
+      "label": "White Blood Cell Count",
+      "unit": "x10^3/\u00b5L",
+      "category": "laboratory",
+      "normal_range": [
+        4.5,
+        11.0
+      ],
+      "default": 7.5,
+      "description": "Leukocytosis (>12) or leukopenia (<4) reflects active systemic inflammatory mobilization.",
+      "sofa_relevant": false
+    },
+    "Lactate": {
+      "label": "Serum Lactate",
+      "unit": "mmol/L",
+      "category": "laboratory",
+      "normal_range": [
+        0.5,
+        2.0
+      ],
+      "default": 1.4,
+      "description": "Elevated lactate (>2.0 mmol/L) marks tissue hypoperfusion and anaerobic glycolysis in sepsis.",
+      "sofa_relevant": true
+    },
+    "Creatinine": {
+      "label": "Serum Creatinine",
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "normal_range": [
+        0.6,
+        1.2
+      ],
+      "default": 0.95,
+      "description": "Acute elevation signifies renal dysfunction and contributes to SOFA score assessment.",
+      "sofa_relevant": true
+    },
+    "Platelets": {
+      "label": "Platelet Count",
+      "unit": "x10^3/\u00b5L",
+      "category": "laboratory",
+      "normal_range": [
+        150.0,
+        400.0
+      ],
+      "default": 240.0,
+      "description": "Thrombocytopenia (<150) indicates consumption coagulopathy or septic microangiopathy.",
+      "sofa_relevant": true
+    },
+    "Glucose": {
+      "label": "Blood Glucose",
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "normal_range": [
+        70.0,
+        140.0
+      ],
+      "default": 110.0,
+      "description": "Stress-induced hyperglycemia or hypoglycemia in severe septic states.",
+      "sofa_relevant": false
+    },
+    "BUN": {
+      "label": "Blood Urea Nitrogen",
+      "unit": "mg/dL",
+      "category": "laboratory",
+      "normal_range": [
+        7.0,
+        20.0
+      ],
+      "default": 14.0,
+      "description": "Nitrogenous waste accumulation marking prerenal azotemia and dehydration.",
+      "sofa_relevant": false
+    },
+    "pH": {
+      "label": "Arterial Blood pH",
+      "unit": "units",
+      "category": "laboratory",
+      "normal_range": [
+        7.35,
+        7.45
+      ],
+      "default": 7.4,
+      "description": "Acid-base equilibrium; acidemia (pH < 7.35) marks metabolic acidosis in septic shock.",
+      "sofa_relevant": true
+    },
+    "Age": {
+      "label": "Patient Age",
+      "unit": "years",
+      "category": "demographics",
+      "normal_range": [
+        18.0,
+        85.0
+      ],
+      "default": 62.0,
+      "description": "Advanced age (>65) substantially increases susceptibility and mortality risk for sepsis.",
+      "sofa_relevant": false
+    },
+    "ICULOS": {
+      "label": "ICU Length of Stay",
+      "unit": "hours",
+      "category": "demographics",
+      "normal_range": [
+        1.0,
+        168.0
+      ],
+      "default": 14.0,
+      "description": "Cumulative hours in ICU; prolonged stays elevate risk of hospital-acquired septic events.",
+      "sofa_relevant": false
+    },
+    "Gender": {
+      "label": "Biological Sex",
+      "unit": "0=F, 1=M",
+      "category": "demographics",
+      "normal_range": [
+        0,
+        1
+      ],
+      "default": 1,
+      "description": "Biological sex indicator for demographic adjustment.",
+      "sofa_relevant": false
+    }
+  },
+  "imputed_medians": {
+    "HR": 79.0,
+    "Resp": 16.3,
+    "Temp": 36.93,
+    "MAP": 83.4,
+    "O2Sat": 97.4,
+    "SBP": 116.7,
+    "DBP": 62.3,
+    "WBC": 7.96,
+    "Lactate": 1.06,
+    "Creatinine": 0.97,
+    "Platelets": 240.1,
+    "Glucose": 112.9,
+    "BUN": 14.4,
+    "pH": 7.399,
+    "Age": 63.4,
+    "ICULOS": 8.0,
+    "Gender": 1.0
+  }
+}
